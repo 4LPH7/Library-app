@@ -1,31 +1,76 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../models/book.dart';
 
 class LibraryProvider with ChangeNotifier {
-  final List<Book> _readingList = [];
-  final List<Book> _readList = [];
+  List<Book> _readingList = [];
+  List<Book> _readList = [];
 
   List<Book> get readingList => _readingList;
   List<Book> get readList => _readList;
 
+  static const _readingListKey = 'reading_list';
+  static const _readListKey = 'read_list';
+
+  LibraryProvider() {
+    loadLibrary();
+  }
+
+  Future<void> loadLibrary() async {
+    final prefs = await SharedPreferences.getInstance();
+
+    final readingListString = prefs.getString(_readingListKey);
+    if (readingListString != null) {
+      final List<dynamic> readingListJson = jsonDecode(readingListString);
+      _readingList = readingListJson.map((json) => Book.fromJson(json)).toList();
+    }
+
+    final readListString = prefs.getString(_readListKey);
+    if (readListString != null) {
+      final List<dynamic> readListJson = jsonDecode(readListString);
+      _readList = readListJson.map((json) => Book.fromJson(json)).toList();
+    }
+
+    notifyListeners();
+  }
+
+  Future<void> _saveLibrary() async {
+    final prefs = await SharedPreferences.getInstance();
+    prefs.setString(_readingListKey, jsonEncode(_readingList));
+    prefs.setString(_readListKey, jsonEncode(_readList));
+  }
+
   void addBook(Book book, {bool isRead = false}) {
     if (isRead) {
-      // If the book is in the reading list, remove it.
       _readingList.removeWhere((b) => b.id == book.id);
-      // Add it to the read list if it's not already there.
       if (!_readList.any((b) => b.id == book.id)) {
         _readList.add(book);
       }
     } else {
-      // If the book is already in the read list, do nothing.
       if (!_readList.any((b) => b.id == book.id)) {
-        // Add it to the reading list if it's not already there.
         if (!_readingList.any((b) => b.id == book.id)) {
           _readingList.add(book);
         }
       }
     }
     notifyListeners();
+    _saveLibrary();
+  }
+
+  void updateBook(Book book) {
+    final readingIndex = _readingList.indexWhere((b) => b.id == book.id);
+    if (readingIndex != -1) {
+      _readingList[readingIndex] = book;
+    }
+
+    final readIndex = _readList.indexWhere((b) => b.id == book.id);
+    if (readIndex != -1) {
+      _readList[readIndex] = book;
+    }
+
+    notifyListeners();
+    _saveLibrary();
   }
 
   void moveToRead(Book book) {
@@ -34,11 +79,13 @@ class LibraryProvider with ChangeNotifier {
       _readList.add(book);
     }
     notifyListeners();
+    _saveLibrary();
   }
 
   void removeBook(Book book) {
     _readingList.removeWhere((b) => b.id == book.id);
     _readList.removeWhere((b) => b.id == book.id);
     notifyListeners();
+    _saveLibrary();
   }
 }
