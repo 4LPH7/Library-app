@@ -16,14 +16,14 @@ Welcome to **My Library**, a feature-rich Flutter application designed to help y
 **Example for YouTube:**
 [![App Demo](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
 -->
-**(Add a video or GIF demonstration here)**
+[**(Add a video or GIF demonstration here)**](https://github.com/user-attachments/assets/d2b675b0-8b91-4f14-8078-b4489761014a)
 
 ## Screenshots
 
-| HomeScreen | Search Screen | Book Details |
+| HomeScreen | My Library | Book Details |
 | :---: | :---: | :---: |
-| **(Add screenshot here)** | **(Add screenshot here)** | **(Add screenshot here)** |
-| *Discover new books* | *Find any book* | *View in-depth details* |
+| ![Image](https://github.com/user-attachments/assets/dcb1ce47-50ac-4a9e-ab87-d942e203d847) | ![Image](https://github.com/user-attachments/assets/94aa7142-11e2-4224-90ab-26840748832b) | ![Image](https://github.com/user-attachments/assets/cf9a4587-9732-4948-a3b5-3fd810e64ef3) |
+| *Discover new books* | *Currently reading and alredy read* | *View in-depth details* |
 
 <!--
 **Instructions for adding screenshots:**
