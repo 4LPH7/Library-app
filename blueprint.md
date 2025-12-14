@@ -26,10 +26,6 @@ My Library is a Flutter application that allows users to search for books using 
 *   **Dynamic Sliders:** The home screen features carousels of recommended books, powered by the `carousel_slider` package.
 *   **Error Handling:** The app includes error handling for API requests and image loading, providing a more robust user experience.
 
-## Current Plan
-
-I will now focus on enhancing the user interface and adding new features to make the app more engaging and intuitive.
-
 ### Immediate Steps
 
 1.  **Enhance the UI:** I will refine the UI of the book details screen, search screen, and library screen to improve the overall look and feel of the app.
