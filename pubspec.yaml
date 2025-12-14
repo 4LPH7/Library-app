@@ -16,7 +16,6 @@ dependencies:
   http: ^1.6.0
   google_fonts: ^6.2.1
   shimmer: ^3.0.0
-  flutter_launcher_icons: ^0.14.4
   cached_network_image: ^3.4.1
   carousel_slider: ^5.1.1
   shared_preferences: ^2.5.4
@@ -25,6 +24,8 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.14.4
+  flutter_native_splash: ^2.4.7
 
 flutter:
   uses-material-design: true
