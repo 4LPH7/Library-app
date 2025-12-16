@@ -16,7 +16,7 @@ Welcome to **My Library**, a feature-rich Flutter application designed to help y
 **Example for YouTube:**
 [![App Demo](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
 -->
-[**(Add a video or GIF demonstration here)**](https://github.com/user-attachments/assets/d2b675b0-8b91-4f14-8078-b4489761014a)
+[**(video demonstration here)**](https://github.com/user-attachments/assets/d2b675b0-8b91-4f14-8078-b4489761014a)
 
 ## Screenshots
 
