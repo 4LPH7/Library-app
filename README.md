@@ -4,18 +4,6 @@ Welcome to **My Library**, a feature-rich Flutter application designed to help y
 
 ## Video Showcase
 
-<!--
-**Instructions for adding a video:**
-1. Record a short video or GIF showcasing the app's main features (e.g., searching, adding to library, browsing details).
-2. Host the video online (e.g., on YouTube, or upload the GIF to your GitHub repo).
-3. Replace the placeholder below with the appropriate markdown for your video.
-
-**Example for GIF:**
-![App Demo](./docs/demo.gif)
-
-**Example for YouTube:**
-[![App Demo](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
--->
 [**(video demonstration here)**](https://github.com/user-attachments/assets/d2b675b0-8b91-4f14-8078-b4489761014a)
 
 ## Screenshots
