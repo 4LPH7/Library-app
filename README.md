@@ -13,14 +13,6 @@ Welcome to **My Library**, a feature-rich Flutter application designed to help y
 | ![Image](https://github.com/user-attachments/assets/dcb1ce47-50ac-4a9e-ab87-d942e203d847) | ![Image](https://github.com/user-attachments/assets/94aa7142-11e2-4224-90ab-26840748832b) | ![Image](https://github.com/user-attachments/assets/cf9a4587-9732-4948-a3b5-3fd810e64ef3) |
 | *Discover new books* | *Currently reading and alredy read* | *View in-depth details* |
 
-<!--
-**Instructions for adding screenshots:**
-1. Take screenshots of the different screens of your app.
-2. Place them in a directory, for example, `docs/screenshots/`.
-3. Replace the "(Add screenshot here)" placeholders with the path to your images.
-   Example: `![Home Screen](./docs/screenshots/home.png)`
--->
-
 ## Getting Started
 
 This project is a starting point for a Flutter application. To get a local copy up and running, follow these simple steps.
@@ -35,11 +27,11 @@ This project is a starting point for a Flutter application. To get a local copy 
 
 1.  **Clone the repository:**
     ```sh
-    git clone https://github.com/your-username/my-library.git
+    git clone https://github.com/4LPH7/Library-app
     ```
 2.  **Navigate to the project directory:**
     ```sh
-    cd my-library
+    cd Library-app
     ```
 3.  **Install dependencies:**
     ```sh
